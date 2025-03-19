@@ -1,9 +1,13 @@
 # Aufgabe 5
 ## Was bewirkt folgende Schleife? Wie lautet eine for-Schleife mit gleicher Ausgabe?
 > int i = 20;
+>
 > while (i>0) {
+>
 > System.out.println(i);
+>
 > i -= 2;
+>
 > }
 
 
