@@ -3,8 +3,8 @@ import java.awt.*;
 import java.awt.image.BufferStrategy;
 
 public class UserInterface extends Canvas implements Runnable {
-    int screenWidth = 800;
-    int screenHeight = 600;
+    final int screenWidth = 800;
+    final int screenHeight = 600;
 
     Thread displayThread;
     volatile boolean running = false;
