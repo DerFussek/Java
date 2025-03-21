@@ -31,9 +31,9 @@ public class Rechtecktest {
         Rechteck rect01;
         rect01 = new Rechteck(3, 5);
 
-        System.out.println("Länge: " + rect01.getLength);
-        System.out.println("Breite: " + rect01.getWidth);
-        System.out.println("Fläche: " + rect01.getArea);
-        System.out.println("Umfang: " + rect01.getScope);
+        System.out.println("Länge: " + rect01.getLength());
+        System.out.println("Breite: " + rect01.getWidth());
+        System.out.println("Fläche: " + rect01.getArea());
+        System.out.println("Umfang: " + rect01.getScope());
     }
 }
