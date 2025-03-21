@@ -118,7 +118,7 @@ public class UserInterface extends Canvas implements Runnable {
         g.drawString("FPS: " + (int) currentFps, 10, 20);
     }
 
-    // 💡 **Korrigierte `update()`-Methode: Rechteck & Kreis bewegen & Kollisionsabfrage**
+    //  **Korrigierte `update()`-Methode: Rechteck & Kreis bewegen & Kollisionsabfrage**
     private void update() {
         // Bewegung Rechteck
         rect.x += rectDx;
@@ -150,7 +150,7 @@ public class UserInterface extends Canvas implements Runnable {
         }
     }
 
-    // **💡 Methode zur Kollisionsprüfung zwischen Rechteck & Kreis**
+    // ** Methode zur Kollisionsprüfung zwischen Rechteck & Kreis**
     private boolean checkCollision(Rect r, Circle c) {
         int closestX = clamp(c.x, r.x, r.x + r.getWidth());
         int closestY = clamp(c.y, r.y, r.y + r.getHeight());
