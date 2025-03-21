@@ -45,20 +45,20 @@ public class Rechtecktest {
         Rechteck rect02 = new Rechteck(length02, width02);
 
         System.out.println("Rechteck 01");
-        System.out.println("Länge: " + rect01.getLength);
-        System.out.println("Breite: " + rect01.getWidth);
-        System.out.println("Fläche: " + rect01.getArea);
-        System.out.println("Umfang: " + rect01.getScope);
+        System.out.println("Länge: " + rect01.getLength());
+        System.out.println("Breite: " + rect01.getWidth());
+        System.out.println("Fläche: " + rect01.getArea());
+        System.out.println("Umfang: " + rect01.getScope());
 
         System.out.println("");
         System.out.println("=====================");
         System.out.println("");
 
         System.out.println("Rechteck 02");
-        System.out.println("Länge: " + rect02.getLength);
-        System.out.println("Breite: " + rect02.getWidth);
-        System.out.println("Fläche: " + rect02.getArea);
-        System.out.println("Umfang: " + rect02.getScope);
+        System.out.println("Länge: " + rect02.getLength());
+        System.out.println("Breite: " + rect02.getWidth());
+        System.out.println("Fläche: " + rect02.getArea());
+        System.out.println("Umfang: " + rect02.getScope());
 
         scanner.close();
     }
