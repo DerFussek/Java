@@ -78,6 +78,9 @@ public class Gamelogic extends Canvas implements Runnable {
 
         g.setColor(Color.WHITE);
         g.drawString("Fps: " + this.currentFps, screenWidth/2-30, screenHeight-10);
+
+        //GAMELOGIC
+        drawScoreboard(g);
     }
 
 
@@ -128,6 +131,18 @@ public class Gamelogic extends Canvas implements Runnable {
 
         //BALL
         ball.move(dt);
-        ball.checkCollision(player01, player02);
+        ball.checkCollisionPlayers(player01, player02);
+        ball.checkCollisionWall(player01, player02, 1);
+
+
     }
+
+    private void drawScoreboard(Graphics2D g) {
+        g.setColor(Color.WHITE);
+        g.drawString(String.valueOf(player01.getScore()), 20, 20);
+        g.drawString(String.valueOf(player02.getScore()), Gamelogic.screenWidth-30, 20);
+
+
+    }
+
 }

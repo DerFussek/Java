@@ -20,9 +20,24 @@ public class Ball {
         this.y += this.vy * dt;
     }
 
-    public void checkCollision(Player ... players) {
-        if(this.y <= 0 || this.y + radius >= Gamelogic.screenHeight) this.vy = -this.vy;
-        if(this.x <= 0 || this.x + radius >= Gamelogic.screenWidth) this.vx = -this.vx;
+    public void checkCollisionWall(Player p1, Player p2, int scoreperCollision) {
+        if(this.y <= 0 || this.y + radius >= Gamelogic.screenHeight) {
+            this.vy = -this.vy;
+
+        }
+        if(this.x <= 0) {
+            this.vx = -this.vx;
+            p2.addScore(scoreperCollision);
+        }
+
+        if(this.x + radius >= Gamelogic.screenWidth) {
+            this.vx = -this.vx;
+            p1.addScore(scoreperCollision);
+        }
+    }
+
+    public void checkCollisionPlayers(Player ... players) {
+
 
         for (Player p : players) {
             boolean istLinks = p.getX() < Gamelogic.screenWidth / 2;
