@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Aufgabe2() {
+public class Aufgabe2 {
     public Aufgabe2() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bitte Radius eingeben: ");
