@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=SpielFeld
+comment1.params=
+comment1.target=SpielFeld()
+comment2.params=fps
+comment2.target=SpielFeld(int)
+comment3.params=
+comment3.target=void\ start()
+comment4.params=
+comment4.target=void\ stop()
+comment5.params=bs
+comment5.target=void\ render(java.awt.image.BufferStrategy)
+comment6.params=g
+comment6.target=void\ draw(java.awt.Graphics2D)
+comment7.params=d_time
+comment7.target=void\ update(double)
+comment8.params=
+comment8.target=void\ run()
+numComments=9

@@ -98,7 +98,8 @@ public class Gamelogic extends Canvas implements Runnable {
             long now = System.nanoTime();
 
             // deltaTime in Sekunden (z. B. 0.016 bei 60 FPS)
-            double deltaTime = (now - lastTime) / 1_000_000_000.0 * 60;
+            double deltaTime = (now - lastTime) / 1_000_000_000.0;
+                    ;
             lastTime = now;
 
             update(deltaTime);
