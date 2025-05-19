@@ -3,10 +3,12 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/NwtProjekt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Kollision" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Calculator" />
       <excludeFolder url="file://$MODULE_DIR$/Geometrie" />
       <excludeFolder url="file://$MODULE_DIR$/Pong" />
+      <excludeFolder url="file://$MODULE_DIR$/Ballmovement" />
+      <excludeFolder url="file://$MODULE_DIR$/NwtProjekt" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
