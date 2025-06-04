@@ -15,6 +15,9 @@ public class SpielFeld extends Canvas implements Runnable {
     
     //SPIELELEMENTE
     Ball ball;
+    Player p1;
+    Player p2;
+    InputHandler inputHandler;
     
     //KONSTRUKTOR
     public SpielFeld() {
@@ -26,10 +29,13 @@ public class SpielFeld extends Canvas implements Runnable {
         this.targetFPS = fps;
         
         //Elemente Instanzieren
-        ball = new Ball();
-        
+        ball = new Ball(400, 300, 10);
+        p1 = new Player(10, 0, 10, 75);
+        p2 = new Player(this.screenWidth - 20, 0, 10, 75);
+        inputHandler = new InputHandler();
         this.setFocusable(true);
         this.requestFocus();
+        this.addKeyListener(this.inputHandler);
     }
     
     
@@ -73,13 +79,33 @@ public class SpielFeld extends Canvas implements Runnable {
         
         //Elemente Zeichnen
         this.ball.draw(g);
+        this.p1.draw(g);
+        this.p2.draw(g);
         
     }
     
     //UPDATE-LOGIK
     private void update(double d_time) {
         this.ball.move(d_time);
-        this.ball.checkCollision();
+        
+        this.ball.WallCollision();
+        
+        //Player 01
+        if(inputHandler.isW_key()) p1.moveUp(d_time);
+        if(inputHandler.isS_key()) p1.moveDown(d_time);
+        this.p1.WallCollision();
+        
+        //Player 02
+        if(inputHandler.isUP_key()) p2.moveUp(d_time);
+        if(inputHandler.isDOWN_key()) p2.moveDown(d_time);
+        this.p2.WallCollision();
+        
+        if(this.ball.intersects(this.p1) || this.ball.intersects(this.p2)) {
+            this.ball.flipDirection(1);
+            this.ball.addSpeed(1.02);
+            this.p1.addSpeed(1.02);
+            this.p2.addSpeed(1.02);
+        }
     }
     
     

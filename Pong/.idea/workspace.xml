@@ -10,6 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fd446bb-1f72-4039-b73a-3350929c5801" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Ballmovement/Ball.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ballmovement/Ball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ballmovement/Ball.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ballmovement/Ball.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ballmovement/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ballmovement/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ballmovement/SpielFeld.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Ballmovement/SpielFeld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ballmovement/SpielFeld.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ballmovement/SpielFeld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ballmovement/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/../Ballmovement/package.bluej" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

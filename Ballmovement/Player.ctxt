@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Player
+comment1.params=x\ y\ w\ h
+comment1.target=Player(int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=boolean\ WallCollision()
+comment3.params=g
+comment3.target=void\ draw(java.awt.Graphics2D)
+comment4.params=d_time
+comment4.target=void\ moveUp(double)
+comment5.params=d_time
+comment5.target=void\ moveDown(double)
+comment6.params=f
+comment6.target=void\ addSpeed(double)
+numComments=7
